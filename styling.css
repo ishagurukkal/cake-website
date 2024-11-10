@@ -1,0 +1,19 @@
+.hero {
+    background-image: url('/path-to-hero-image.jpg');
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  .cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .cake-item img {
+    width: 100%;
+    height: auto;
+  }
+  

@@ -1,0 +1,16 @@
+.cake-categories {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .category-item img {
+    width: 100%;
+    height: auto;
+  }
+  

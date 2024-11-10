@@ -1,0 +1,44 @@
+// Homepage.js
+import React from 'react';
+import { Link} from 'react-router-dom';
+import './Homepage.css';
+
+const Homepage = () => {
+  return (
+    <div className="homepage">
+      <div className="hero">
+        <h1>Welcome to Sweet Delights Bakery</h1>
+        <p>Freshly baked cakes for every occasion</p>
+      </div>
+      <div className="featured-cakes">
+        <h2>Featured Cakes</h2>
+        <div className="cakes-grid">
+          {/* Map through an array of cake objects */}
+          <div className="cake-item">
+            <img src="https://i.pinimg.com/564x/f7/02/59/f702594704d4ba8d32b3ce8243c2ece2.jpg" alt="Cake" />
+            <h3>Blueberry Delulu</h3>
+            <p>Delicious Blueberry cake fills up your tastebuds and delusions.</p>
+            <Link to="/cake-details/1">View Details</Link>
+          </div>
+          <div className="cake-item">
+            <img src="https://i.pinimg.com/564x/fe/9e/7a/fe9e7a772002a20b287041a7d03daafd.jpg" alt="Cake" />
+            <h3>Chocolove</h3>
+            <p>Delicious chocolate cake for all choco lovers.</p>
+            <Link to="/cake-details/1">View Details</Link>
+          </div>
+          <div className="cake-item">
+            <img src="https://i.pinimg.com/564x/c5/d5/60/c5d56025c245277d93a76df48537f867.jpg" alt="Cake" />
+            <h3>Yours</h3>
+            <p>A cake that has everything you love.</p>
+            <Link to="/cake-details/1">View Details</Link>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Homepage;
